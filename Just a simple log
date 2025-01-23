@@ -1,0 +1,28 @@
+Write first code:  //Just a rough guide
+  Install iverilog
+  add path to environment variables
+  
+  create a file(.txt) with instructions(for basics just print "hello world") and .v extension
+  run CMD from the bin folder of iverilog(folder containing iverilog.exe)
+  run the command: iverilog.exe -o <obj_file_name_path> <file_name_path>
+  this will compile the code and create an object file,
+  run the command: vvp <object_name>
+  this will run the compiled file and display the hello world in the CMD
+
+With a testbench:
+
+  write a deign file and its testbench
+  open CMD from the bin
+  run the command: iverilog.exe -o <obj_filename> <testbench_name> <design_name>
+  run the command: vvp <obj_filename>
+  this will display the results in CMD
+
+For GTK Waveforms:
+
+  the testbench file should have a $dumpfile("<filename>");
+  use this name with the following command:
+  gtkwave.exe <filename>
+
+
+  
+
