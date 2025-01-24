@@ -23,7 +23,7 @@ where to find the module
  assign Carry = n_carry2 ^ n_carry1; 
  
  
- /* Can also use the Or gate primitive 
+ /* Can also use the built-in 'or' gate primitive 
  or U3(carry, n_carry1, n_carry2);
  need to make sure the order is correct
  */
