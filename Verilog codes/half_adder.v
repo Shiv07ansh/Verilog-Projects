@@ -9,11 +9,18 @@ C=A⋅B
 
 // Logic : 2 Inputs, 2 Outputs
 
-module (input a, b, output S, C) //default type if not specified is Nets
-//I can also explicitly initialize the ports as input and output after the declaration( that was verilog 1995)
+module halfadd(a, b, S, C); //default type if not specified is Nets
+
+input a, b;
+output S, C;
 
 assign S = a ^ b;  //this is implicit continuous assignment 
 assign C = a & b;
 
 endmodule 
 
+/* Fixes: 
+	I forgot the name of the module 
+	input and output should be decalred for all of the ports
+	missed ; in module declaration
+*/
